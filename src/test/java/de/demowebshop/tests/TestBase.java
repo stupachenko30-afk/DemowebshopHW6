@@ -34,7 +34,7 @@ public class TestBase {
         driver.findElement(locator).click();
     }
 
-    public void type(By locator, String text) {
+    public void type(By locator, String text) {//атрибут id=email
         WebElement element = driver.findElement(locator);
         element.clear();
         element.sendKeys(text);

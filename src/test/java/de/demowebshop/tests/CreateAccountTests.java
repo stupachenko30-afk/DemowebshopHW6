@@ -15,13 +15,13 @@ public class CreateAccountTests extends TestBase {
 
         type(By.id("FirstName"), "Yevhenii");
         type(By.id("LastName"), "Stupachenko");
-        String email = "stupachenko30" + System.currentTimeMillis() + "@gmail.com";
+        String email = "stupachenko30" + System.currentTimeMillis() + "@gmail.com";// уникальный java email c 1970 года
         type(By.id("Email"), email);
         type(By.id("Password"), "Qwerty123!");
         type(By.id("ConfirmPassword"), "Qwerty123!");
 
         click(By.id("register-button"));
 
-        Assert.assertTrue(isElementPresent(By.cssSelector(".result")));
+        Assert.assertTrue(isElementPresent(By.cssSelector(".result")));//проверка регистрации
     }
 }

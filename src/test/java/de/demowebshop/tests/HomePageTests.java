@@ -8,7 +8,7 @@ public class HomePageTests extends TestBase {
     @Test
     public void isHomeComponentPresentTest() {
 
-        Assert.assertTrue(isHomeComponentPresent());
+        Assert.assertTrue(isHomeComponentPresent());//условие(элемент isHome...)=true
 
     }
 }
