@@ -14,12 +14,10 @@ public class CreateAccountTests extends TestBase {
     }
     @Test
     public void newUserRegisterNegativeTest() {
-
         clickRegisterLink();
         selectGender();
         fillLoginRegisterForm();
         clickRegistrationButton();
-
         Assert.assertTrue(validationSummaryError());
     }
 
