@@ -47,4 +47,40 @@ public class TestBase {
     public boolean isHomeComponentPresent() {
         return isElementPresent(By.cssSelector(".header-logo"));
     }
-}
+
+    public void fillLoginRegisterForm() {
+        type(By.id("FirstName"), "Yevhenii");
+        type(By.id("LastName"), "Stupachenko");
+        type(By.id("Email"), "stupachenko30@gmail.com");
+        type(By.id("Password"), "Qwerty123!");
+        type(By.id("ConfirmPassword"), "Qwerty123!");
+    }
+
+    public void selectGender() {
+        click(By.id("gender-male"));
+    }
+
+    public void clickRegisterLink() {
+        click(By.cssSelector(".ico-register"));
+    }
+
+    public void clickRegistrationButton() {
+        click(By.id("register-button"));
+    }
+
+    public void clickInputLoginButton() {
+        click(By.cssSelector("input.login-button"));
+    }
+
+    public void fillLoginForm() {
+        type(By.id("Email"), "stupachenko30@gmail.com");
+        type(By.id("Password"), "Qwerty123!");
+    }
+
+    public void clickLoginLink() {
+        click(By.cssSelector(".ico-login"));
+    }
+  //  public String generateEmail() {
+   //     return "stupachenko30" + System.currentTimeMillis() + "@gmail.com";
+    }
+

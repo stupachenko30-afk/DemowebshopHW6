@@ -1,27 +1,16 @@
 package de.demowebshop.tests;
-
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 public class CreateAccountTests extends TestBase {
 
     @Test
     public void newUserRegisterPositiveTest() {
-
-        click(By.cssSelector(".ico-register"));
-
-        click(By.id("gender-male"));
-
-        type(By.id("FirstName"), "Yevhenii");
-        type(By.id("LastName"), "Stupachenko");
-        String email = "stupachenko30" + System.currentTimeMillis() + "@gmail.com";// уникальный java email c 1970 года
-        type(By.id("Email"), email);
-        type(By.id("Password"), "Qwerty123!");
-        type(By.id("ConfirmPassword"), "Qwerty123!");
-
-        click(By.id("register-button"));
-
+        clickRegisterLink();
+        selectGender();
+        fillLoginRegisterForm();
+        clickRegistrationButton();
         Assert.assertTrue(isElementPresent(By.cssSelector(".result")));//проверка регистрации
     }
+
 }

@@ -8,14 +8,10 @@ public class LoginTests extends TestBase {
 
     @Test
     public void loginRegisteredUserPositiveTest() {
-
-        click(By.cssSelector(".ico-login"));
-
-        type(By.id("Email"), "stupachenko30@gmail.com");
-        type(By.id("Password"), "Qwerty123!");
-
-        click(By.cssSelector("input.login-button"));
-
+        clickLoginLink();
+        fillLoginForm();
+        clickInputLoginButton();
         Assert.assertTrue(isElementPresent(By.cssSelector(".ico-logout")));
     }
+
 }
