@@ -80,7 +80,11 @@ public class TestBase {
     public void clickLoginLink() {
         click(By.cssSelector(".ico-login"));
     }
-  //  public String generateEmail() {
+
+    public boolean validationSummaryError() {
+        return isElementPresent(By.cssSelector(".validation-summary-errors"));
+    }
+    //  public String generateEmail() {
    //     return "stupachenko30" + System.currentTimeMillis() + "@gmail.com";
     }
 

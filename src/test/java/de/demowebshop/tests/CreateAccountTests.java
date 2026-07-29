@@ -12,5 +12,15 @@ public class CreateAccountTests extends TestBase {
         clickRegistrationButton();
         Assert.assertTrue(isElementPresent(By.cssSelector(".result")));//проверка регистрации
     }
+    @Test
+    public void newUserRegisterNegativeTest() {
+
+        clickRegisterLink();
+        selectGender();
+        fillLoginRegisterForm();
+        clickRegistrationButton();
+
+        Assert.assertTrue(validationSummaryError());
+    }
 
 }
