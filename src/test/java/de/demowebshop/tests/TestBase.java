@@ -18,6 +18,7 @@ public class TestBase {
     public void setUp() {
 
         driver = new ChromeDriver();
+        WebDriverManager.chromedriver().setup();
         driver.get("https://demowebshop.tricentis.com/");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -41,23 +42,29 @@ public class TestBase {
     }
 
     public boolean isElementPresent(By locator) {
+
         return driver.findElements(locator).size() > 0;
     }
 
     public boolean isHomeComponentPresent() {
+
         return isElementPresent(By.cssSelector(".header-logo"));
     }
 
-    public void fillLoginRegisterForm() {
-        type(By.id("FirstName"), "Yevhenii");
-        type(By.id("LastName"), "Stupachenko");
-        type(By.id("Email"), "stupachenko30@gmail.com");
-        type(By.id("Password"), "Qwerty123!");
-        type(By.id("ConfirmPassword"), "Qwerty123!");
+    public void fillLoginRegisterForm(String Name,
+                                      String LastName,
+                                      String email,
+                                      String Password,
+                                      String ConfirmPassword) {
+        type(By.id("FirstName"), Name);
+        type(By.id("LastName"), LastName);
+        type(By.id("Email"), email);
+        type(By.id("Password"), Password);
+        type(By.id("ConfirmPassword"), ConfirmPassword);
     }
 
-    public void selectGender() {
-        click(By.id("gender-male"));
+    public void selectGender(String Gender) {
+        click(By.id(Gender));
     }
 
     public void clickRegisterLink() {
@@ -65,7 +72,7 @@ public class TestBase {
     }
 
     public void clickRegistrationButton() {
-        click(By.id("register-button"));
+        selectGender("register-button");
     }
 
     public void clickInputLoginButton() {
@@ -75,6 +82,10 @@ public class TestBase {
     public void fillLoginForm() {
         type(By.id("Email"), "stupachenko30@gmail.com");
         type(By.id("Password"), "Qwerty123!");
+    }
+    public void fillLoginForm(String email, String password){
+type(By.id("Email"),email);
+type (By.id("Password"),password);
     }
 
     public void clickLoginLink() {
