@@ -27,7 +27,7 @@ public class LoginTests extends TestBase {
 
         Assert.assertTrue(
                 validationSummaryError(),
-                "Ошибка авторизации не появилась"
+                "Ошибка авторизации  появилась"
         );
     }
     @Test
@@ -44,7 +44,43 @@ public class LoginTests extends TestBase {
         Assert.assertTrue(
                 isElementPresent(
                         By.cssSelector("span[data-valmsg-for='Email']")),
-                "Ошибка авторизации не появилась"
+                "Ошибка авторизации  появилась"
+        );
+    }
+    @Test
+    public void loginWithUnregisteredEmailNegativeTest() {
+        clickLoginLink();
+
+        fillLoginForm(
+                "unknown" + System.currentTimeMillis() + "@gmail.com",
+                "Qwerty123!"
+        );
+
+        clickInputLoginButton();
+
+        Assert.assertTrue(
+                validationSummaryError(),
+                "Ошибка для незарегистрированного пользователя не появилась"
+        );
+    }
+    @Test
+    public void registerWithEmptyEmailNegativeTest() {
+        clickRegisterLink();
+        selectGender("gender-male");
+
+        fillLoginRegisterForm(
+                "Yevhenii",
+                "Stupachenko",
+                "",
+                "Qwerty123!",
+                "Qwerty123!"
+        );
+
+        clickRegistrationButton();
+
+        Assert.assertTrue(
+                isElementPresent(By.cssSelector("span[data-valmsg-for='Email']")),
+                "Ошибка обязательного поля Email  появилась"
         );
     }
 }

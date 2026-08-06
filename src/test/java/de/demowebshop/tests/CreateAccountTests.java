@@ -38,7 +38,7 @@ public class CreateAccountTests extends TestBase {
 
         Assert.assertTrue(
                 isElementPresent(By.cssSelector("span[data-valmsg-for='Email']")),
-                "Ошибка обязательного поля Email не появилась"
+                "Ошибка обязательного поля Email  появилась"
         );
     }
     @Test
@@ -62,7 +62,7 @@ public class CreateAccountTests extends TestBase {
 
         Assert.assertTrue(
                 isElementPresent(By.cssSelector("span[data-valmsg-for='Email']")),
-                "Ошибка несовпадения паролей не появилась"
+                "Ошибка несовпадения паролей появилась"
         );
     }
     @Test
