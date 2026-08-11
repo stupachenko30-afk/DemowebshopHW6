@@ -1,4 +1,5 @@
 package de.demowebshop.tests;
+import org.jspecify.annotations.NonNull;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -6,18 +7,28 @@ public class CreateAccountTests extends TestBase {
 
     @Test
     public void newUserRegisterPositiveTest() {
-        String email = "stupachenko30" + System.currentTimeMillis() + "@gmail.com";
+        String email = generateEmail();
         clickRegisterLink();
         selectGender("gender-male");
         fillLoginRegisterForm("Yevhenii", "Stupachenko", email, "Qwerty123!", "Qwerty123!");
         clickRegistrationButton();
         Assert.assertTrue(isElementPresent(By.cssSelector(".result")));//проверка регистрации
     }
+
+    public @NonNull String generateEmail() {
+        String email = "stupachenko30" + System.currentTimeMillis() + "@gmail.com";
+        return email;
+    }
+
     @Test
     public void newUserRegisterExistingEmailNegativeTest() {
         clickRegisterLink();
         selectGender("gender-male");
-        fillLoginRegisterForm("Yevhenii", "Stupachenko", "stupachenko30@gmail.com", "Qwerty123!", "Qwerty123!");
+        fillLoginRegisterForm("Yevhenii",
+                "Stupachenko",
+                "stupachenko30@gmail.com",
+                "Qwerty123!",
+                "Qwerty123!");
         clickRegistrationButton();
         Assert.assertTrue(validationSummaryError());
     }
@@ -43,9 +54,7 @@ public class CreateAccountTests extends TestBase {
     }
     @Test
     public void registerWithDifferentPasswordsNegativeTest() {
-        String email = "stupachenko30"
-                + System.currentTimeMillis()
-                + "@gmail.com";
+        String email = generateEmail();
 
         clickRegisterLink();
         selectGender("gender-male");
@@ -87,9 +96,7 @@ public class CreateAccountTests extends TestBase {
     }
     @Test
     public void registerWithShortPasswordNegativeTest() {
-        String email = "stupachenko30"
-                + System.currentTimeMillis()
-                + "@gmail.com";
+        String email = generateEmail();
 
         clickRegisterLink();
         selectGender("gender-male");

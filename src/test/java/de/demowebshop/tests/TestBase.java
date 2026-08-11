@@ -72,7 +72,7 @@ public class TestBase {
     }
 
     public void clickRegistrationButton() {
-        selectGender("register-button");
+        click(By.id("register-button"));
     }
 
     public void clickInputLoginButton() {
@@ -95,7 +95,7 @@ type (By.id("Password"),password);
     public boolean validationSummaryError() {
         return isElementPresent(By.cssSelector(".validation-summary-errors"));
     }
-    //  public String generateEmail() {
-   //     return "stupachenko30" + System.currentTimeMillis() + "@gmail.com";
-    }
+      public String generateEmail() {
+      return "stupachenko30" + System.currentTimeMillis() + "@gmail.com";
+    }}
 

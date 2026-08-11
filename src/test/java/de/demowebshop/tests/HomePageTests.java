@@ -1,5 +1,6 @@
 package de.demowebshop.tests;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -29,11 +30,16 @@ public class HomePageTests extends TestBase {
     @Test
     public void searchWithEmptyQueryNegativeTest() {
 
-        click(By.cssSelector("span[data-valmsg-for='Password']"));
+        click(By.cssSelector("input.search-box-button"));
 
-        Assert.assertTrue(
-                isElementPresent(By.cssSelector("dialog-notifications-error"))
+        Alert alert = driver.switchTo().alert();
+
+        Assert.assertEquals(
+                alert.getText(),
+                "Please enter some search keyword"
         );
+
+        alert.accept();
     }
     @Test
     public void searchUnknownProductNegativeTest() {
@@ -44,7 +50,7 @@ public class HomePageTests extends TestBase {
 
         click(By.cssSelector("input.search-box-button"));
 
-        Assert.assertTrue(                isElementPresent(By.cssSelector(".no-result")),
+        Assert.assertTrue(isElementPresent(By.cssSelector(".result")),
                 "Сообщение об отсутствии товаров не появилось"
         );
     }
