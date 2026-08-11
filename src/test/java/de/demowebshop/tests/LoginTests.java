@@ -6,80 +6,47 @@ import org.testng.annotations.Test;
 
 public class LoginTests extends TestBase {
 
-    @Test
-    public void loginRegisteredUserPositiveTest() {
-        clickLoginLink();
-        fillLoginForm();
-        clickInputLoginButton();
-        Assert.assertTrue(isElementPresent(By.cssSelector(".ico-logout")));
-    }
+
 
     @Test
     public void loginWithIncorrectPasswordNegativeTest() {
-        clickLoginLink();
-        fillLoginForm(
+        app.user.clickLoginLink();
+        app.user.fillLoginForm(
                 "stupachenko30@gmail.com",
-                "IncorrectPassword123!"
-        );
-
-        clickInputLoginButton();
-
+                "IncorrectPassword123!");
+        app.user.clickInputLoginButton();
         Assert.assertTrue(
-                validationSummaryError(),
-                "Ошибка авторизации  появилась"
-        );
+                app.user.validationSummaryError(),
+                "Ошибка авторизации  появилась");
     }
     @Test
     public void loginWithIncorrectEmailNegativeTest() {
-        clickLoginLink();
-
-        fillLoginForm(
+        app.user.clickLoginLink();
+        app.user.fillLoginForm(
                 "stupachenko30gmail.com",
-                "QWERTy123!"
-        );
-
-        clickInputLoginButton();
-
+                "QWERTy123!");
+        app.user.clickInputLoginButton();
         Assert.assertTrue(
-                isElementPresent(
-                        By.cssSelector("span[data-valmsg-for='Email']")),
-                "Ошибка авторизации  появилась"
-        );
+                app.user.isElementPresent(By.cssSelector("span[data-valmsg-for='Email']")),
+                "Ошибка авторизации  появилась");
+    }
+    @Test
+    public void loginRegisteredUserPositiveTest() {
+        app.user.clickLoginLink();
+        app.user.fillLoginForm();
+        app.user.clickInputLoginButton();
+        Assert.assertTrue(app.user.isElementPresent(By.cssSelector(".ico-logout")));
     }
     @Test
     public void loginWithUnregisteredEmailNegativeTest() {
-        clickLoginLink();
-
-        fillLoginForm(
+        app.user.clickLoginLink();
+        app.user.fillLoginForm(
                 "unknown" + System.currentTimeMillis() + "@gmail.com",
-                "Qwerty123!"
-        );
-
-        clickInputLoginButton();
-
+                "Qwerty123!");
+        app.user.clickInputLoginButton();
         Assert.assertTrue(
-                validationSummaryError(),
-                "Ошибка для незарегистрированного пользователя не появилась"
-        );
+                app.user.validationSummaryError(),
+                "Ошибка для незарегистрированного пользователя не появилась");
     }
-    @Test
-    public void registerWithEmptyEmailNegativeTest() {
-        clickRegisterLink();
-        selectGender("gender-male");
 
-        fillLoginRegisterForm(
-                "Yevhenii",
-                "Stupachenko",
-                "",
-                "Qwerty123!",
-                "Qwerty123!"
-        );
-
-        clickRegistrationButton();
-
-        Assert.assertTrue(
-                isElementPresent(By.cssSelector("span[data-valmsg-for='Email']")),
-                "Ошибка обязательного поля Email  появилась"
-        );
-    }
 }

@@ -1,5 +1,4 @@
 package de.demowebshop.tests;
-import org.jspecify.annotations.NonNull;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -7,110 +6,76 @@ public class CreateAccountTests extends TestBase {
 
     @Test
     public void newUserRegisterPositiveTest() {
-        String email = generateEmail();
-        clickRegisterLink();
-        selectGender("gender-male");
-        fillLoginRegisterForm("Yevhenii", "Stupachenko", email, "Qwerty123!", "Qwerty123!");
-        clickRegistrationButton();
-        Assert.assertTrue(isElementPresent(By.cssSelector(".result")));//проверка регистрации
+        String email = app.user.generateEmail();
+        app.user.clickRegisterLink();
+        app.user.selectGender("gender-male");
+        app.user.fillLoginRegisterForm(
+                new User().setName("Yevhenii").setLastName("Stupachenko")
+                .setEmail(email). setPassword("Qwerty123!").setConfirmPassword("Qwerty123!"));
+        app.user.clickRegistrationButton();
+        Assert.assertTrue(app.user.isElementPresent(By.cssSelector(".result")));//проверка регистрации
     }
-
-
 
     @Test
     public void newUserRegisterExistingEmailNegativeTest() {
-        clickRegisterLink();
-        selectGender("gender-male");
-        fillLoginRegisterForm("Yevhenii",
-                "Stupachenko",
-                "stupachenko30@gmail.com",
-                "Qwerty123!",
-                "Qwerty123!");
-        clickRegistrationButton();
-        Assert.assertTrue(validationSummaryError());
+        app.user.clickRegisterLink();
+        app.user.selectGender("gender-male");
+        app.user.fillLoginRegisterForm(
+                new User().setName("Yevhenii").setLastName("Stupachenko")
+                        .setEmail("stupachenko30@gmail.com").setPassword("Qwerty123!").setConfirmPassword("Qwerty123!"));
+        app.user.clickRegistrationButton();
+        Assert.assertTrue(app.user.validationSummaryError());
     }
     @Test
     public void registerWithEmptyEmailNegativeTest() {
-        clickRegisterLink();
-        selectGender("gender-male");
-
-        fillLoginRegisterForm(
-                "Yevhenii",
-                "Stupachenko",
-                "",
-                "Qwerty123!",
-                "Qwerty123!"
-        );
-
-        clickRegistrationButton();
-
+        app.user.clickRegisterLink();
+        app.user.selectGender("gender-male");
+        app.user.fillLoginRegisterForm(
+                new User().setName("Yevhenii").setLastName("Stupachenko")
+                        .setEmail("").setPassword("Qwerty123!").setConfirmPassword("Qwerty123!"));
+        app.user.clickRegistrationButton();
         Assert.assertTrue(
-                isElementPresent(By.cssSelector("span[data-valmsg-for='Email']")),
-                "Ошибка обязательного поля Email  появилась"
-        );
+                app.user.isElementPresent(By.cssSelector("span[data-valmsg-for='Email']")),
+                "Ошибка обязательного поля Email не появилась");
     }
+
     @Test
     public void registerWithDifferentPasswordsNegativeTest() {
-        String email = generateEmail();
-
-        clickRegisterLink();
-        selectGender("gender-male");
-
-        fillLoginRegisterForm(
-                "Yevhenii",
-                "Stupachenko",
-                email,
-                "Qwerty123!",
-                "Qwerty456!"
-        );
-
-        clickRegistrationButton();
-
+        String email = app.user.generateEmail();
+        app.user.clickRegisterLink();
+        app.user.selectGender("gender-male");
+        app.user.fillLoginRegisterForm(
+                new User().setName("Yevhenii").setLastName("Stupachenko")
+                        .setEmail(email).setPassword("Qwerty123!").setConfirmPassword("Qwerty456!"));
+        app.user.clickRegistrationButton();
         Assert.assertTrue(
-                isElementPresent(By.cssSelector("span[data-valmsg-for='Email']")),
-                "Ошибка несовпадения паролей появилась"
-        );
+                app.user.isElementPresent(By.cssSelector("span[data-valmsg-for='ConfirmPassword']")),
+                "Ошибка несовпадения паролей не появилась");
     }
+
     @Test
     public void registerWithInvalidEmailNegativeTest() {
-        clickRegisterLink();
-        selectGender("gender-male");
-
-        fillLoginRegisterForm(
-                "Yevhenii",
-                "Stupachenko",
-                "incorrect-email",
-                "Qwerty123!",
-                "Qwerty123!"
-        );
-
-        clickRegistrationButton();
-
+        app.user.clickRegisterLink();
+        app.user.selectGender("gender-male");
+        app.user.fillLoginRegisterForm(
+                new User().setName("Yevhenii").setLastName("Stupachenko")
+                        .setEmail("incorrect-email"). setPassword("Qwerty123!").setConfirmPassword("Qwerty123!"));
+        app.user.clickRegistrationButton();
         Assert.assertTrue(
-                isElementPresent(By.cssSelector("span[data-valmsg-for='Email']")),
-                "Ошибка некорректного email не появилась"
-        );
+                app.user.isElementPresent(By.cssSelector("span[data-valmsg-for='Email']")),
+                "Ошибка некорректного email не появилась");
     }
     @Test
     public void registerWithShortPasswordNegativeTest() {
-        String email = generateEmail();
-
-        clickRegisterLink();
-        selectGender("gender-male");
-
-        fillLoginRegisterForm(
-                "Yevhenii",
-                "Stupachenko",
-                email,
-                "123",
-                "123"
-        );
-
-        clickRegistrationButton();
-
+        String email = app.user.generateEmail();
+        app.user.clickRegisterLink();
+        app.user.selectGender("gender-male");
+        app.user.fillLoginRegisterForm(
+                new User().setName("Yevhenii").setLastName("Stupachenko")
+                        .setEmail(email).setPassword("123").setConfirmPassword("123"));
+        app.user.clickRegistrationButton();
         Assert.assertTrue(
-                isElementPresent(By.cssSelector("span[data-valmsg-for='Password']")),
-                "Ошибка короткого пароля не появилась"
-        );
+                app.user.isElementPresent(By.cssSelector("span[data-valmsg-for='Password']")),
+                "Ошибка короткого пароля не появилась");
     }
 }
