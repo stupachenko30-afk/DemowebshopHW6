@@ -1,9 +1,9 @@
-package de.demowebshop.tests;
+package de.demowebshop.fw;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class HomePageHelper extends BaseHelper {
+public class HomePageHelper extends de.demowebshop.core.BaseHelper {
     public HomePageHelper(WebDriver driver) {
         super(driver);
     }

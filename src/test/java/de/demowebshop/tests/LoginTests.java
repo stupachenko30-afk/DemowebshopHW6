@@ -1,5 +1,6 @@
 package de.demowebshop.tests;
 
+import de.demowebshop.core.TestBase;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -10,42 +11,42 @@ public class LoginTests extends TestBase {
 
     @Test
     public void loginWithIncorrectPasswordNegativeTest() {
-        app.user.clickLoginLink();
-        app.user.fillLoginForm(
+        app.getUser().clickLoginLink();
+        app.getUser().fillLoginForm(
                 "stupachenko30@gmail.com",
                 "IncorrectPassword123!");
-        app.user.clickInputLoginButton();
+        app.getUser().clickInputLoginButton();
         Assert.assertTrue(
-                app.user.validationSummaryError(),
+                app.getUser().validationSummaryError(),
                 "Ошибка авторизации  появилась");
     }
     @Test
     public void loginWithIncorrectEmailNegativeTest() {
-        app.user.clickLoginLink();
-        app.user.fillLoginForm(
+        app.getUser().clickLoginLink();
+        app.getUser().fillLoginForm(
                 "stupachenko30gmail.com",
                 "QWERTy123!");
-        app.user.clickInputLoginButton();
+        app.getUser().clickInputLoginButton();
         Assert.assertTrue(
-                app.user.isElementPresent(By.cssSelector("span[data-valmsg-for='Email']")),
+                app.getUser().isElementPresent(By.cssSelector("span[data-valmsg-for='Email']")),
                 "Ошибка авторизации  появилась");
     }
     @Test
     public void loginRegisteredUserPositiveTest() {
-        app.user.clickLoginLink();
-        app.user.fillLoginForm();
-        app.user.clickInputLoginButton();
-        Assert.assertTrue(app.user.isElementPresent(By.cssSelector(".ico-logout")));
+        app.getUser().clickLoginLink();
+        app.getUser().fillLoginForm();
+        app.getUser().clickInputLoginButton();
+        Assert.assertTrue(app.getUser().isElementPresent(By.cssSelector(".ico-logout")));
     }
     @Test
     public void loginWithUnregisteredEmailNegativeTest() {
-        app.user.clickLoginLink();
-        app.user.fillLoginForm(
+        app.getUser().clickLoginLink();
+        app.getUser().fillLoginForm(
                 "unknown" + System.currentTimeMillis() + "@gmail.com",
                 "Qwerty123!");
-        app.user.clickInputLoginButton();
+        app.getUser().clickInputLoginButton();
         Assert.assertTrue(
-                app.user.validationSummaryError(),
+                app.getUser().validationSummaryError(),
                 "Ошибка для незарегистрированного пользователя не появилась");
     }
 

@@ -1,4 +1,4 @@
-package de.demowebshop.tests;
+package de.demowebshop.core;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

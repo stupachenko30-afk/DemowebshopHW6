@@ -1,9 +1,10 @@
-package de.demowebshop.tests;
+package de.demowebshop.fw;
 
+import de.demowebshop.model.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class UserHelper extends BaseHelper{
+public class UserHelper extends de.demowebshop.core.BaseHelper {
 
     public UserHelper(WebDriver driver) {
         super(driver);
