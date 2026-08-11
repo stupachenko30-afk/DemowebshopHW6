@@ -18,7 +18,7 @@ public class LoginTests extends TestBase {
         app.getUser().clickInputLoginButton();
         Assert.assertTrue(
                 app.getUser().validationSummaryError(),
-                "Ошибка авторизации  появилась");
+                "Ошибка авторизации не появилась");
     }
     @Test
     public void loginWithIncorrectEmailNegativeTest() {
@@ -29,7 +29,7 @@ public class LoginTests extends TestBase {
         app.getUser().clickInputLoginButton();
         Assert.assertTrue(
                 app.getUser().isElementPresent(By.cssSelector("span[data-valmsg-for='Email']")),
-                "Ошибка авторизации  появилась");
+                "Ошибка авторизации не появилась");
     }
     @Test
     public void loginRegisteredUserPositiveTest() {
