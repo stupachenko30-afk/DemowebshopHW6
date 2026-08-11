@@ -15,10 +15,7 @@ public class CreateAccountTests extends TestBase {
         Assert.assertTrue(isElementPresent(By.cssSelector(".result")));//проверка регистрации
     }
 
-    public @NonNull String generateEmail() {
-        String email = "stupachenko30" + System.currentTimeMillis() + "@gmail.com";
-        return email;
-    }
+
 
     @Test
     public void newUserRegisterExistingEmailNegativeTest() {

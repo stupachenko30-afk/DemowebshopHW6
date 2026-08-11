@@ -23,14 +23,14 @@ public class HomePageTests extends TestBase {
     @Test
     public void accountLinkIsNotPresentForGuestTest() {
         Assert.assertFalse(
-                isElementPresent(By.cssSelector("span[data-valmsg-for='Password']")),
+                isElementPresent(By.cssSelector(".header-links .account")),
                 "Ссылка аккаунта отображается для неавторизованного пользователя"
         );
     }
     @Test
     public void searchWithEmptyQueryNegativeTest() {
 
-        click(By.cssSelector("input.search-box-button"));
+        clickSearchButton();
 
         Alert alert = driver.switchTo().alert();
 
@@ -41,6 +41,7 @@ public class HomePageTests extends TestBase {
 
         alert.accept();
     }
+
     @Test
     public void searchUnknownProductNegativeTest() {
         type(
@@ -48,7 +49,7 @@ public class HomePageTests extends TestBase {
                 "UnknownProduct" + System.currentTimeMillis()
         );
 
-        click(By.cssSelector("input.search-box-button"));
+        clickSearchButton();
 
         Assert.assertTrue(isElementPresent(By.cssSelector(".result")),
                 "Сообщение об отсутствии товаров не появилось"

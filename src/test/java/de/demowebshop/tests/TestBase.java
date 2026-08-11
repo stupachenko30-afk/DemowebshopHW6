@@ -97,5 +97,11 @@ type (By.id("Password"),password);
     }
       public String generateEmail() {
       return "stupachenko30" + System.currentTimeMillis() + "@gmail.com";
-    }}
+    }
+
+    public void clickSearchButton() {
+        click(By.cssSelector("input.search-box-button"));
+    }
+
+}
 

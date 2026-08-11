@@ -17,7 +17,6 @@ public class LoginTests extends TestBase {
     @Test
     public void loginWithIncorrectPasswordNegativeTest() {
         clickLoginLink();
-
         fillLoginForm(
                 "stupachenko30@gmail.com",
                 "IncorrectPassword123!"
