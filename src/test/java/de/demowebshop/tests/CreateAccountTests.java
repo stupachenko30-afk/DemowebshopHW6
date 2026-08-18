@@ -1,5 +1,6 @@
 package de.demowebshop.tests;
 import de.demowebshop.core.TestBase;
+import de.demowebshop.data.UserData;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,8 +12,8 @@ public class CreateAccountTests extends TestBase {
         app.getUser().clickRegisterLink();
         app.getUser().selectGender("gender-male");
         app.getUser().fillLoginRegisterForm(
-                new de.demowebshop.model.User().setName("Yevhenii").setLastName("Stupachenko")
-                .setEmail(email). setPassword("Qwerty123!").setConfirmPassword("Qwerty123!"));
+                new de.demowebshop.model.User().setName(UserData.NAME).setLastName(UserData.LASTNAME)
+                .setEmail(email). setPassword(UserData.PASSWORD).setConfirmPassword(UserData.PASSWORD));
         app.getUser().clickRegistrationButton();
         Assert.assertTrue(app.getUser().isElementPresent(By.cssSelector(".result")));//проверка регистрации
     }
@@ -22,8 +23,8 @@ public class CreateAccountTests extends TestBase {
         app.getUser().clickRegisterLink();
         app.getUser().selectGender("gender-male");
         app.getUser().fillLoginRegisterForm(
-                new de.demowebshop.model.User().setName("Yevhenii").setLastName("Stupachenko")
-                        .setEmail("stupachenko30@gmail.com").setPassword("Qwerty123!").setConfirmPassword("Qwerty123!"));
+                new de.demowebshop.model.User().setName(UserData.NAME).setLastName(UserData.LASTNAME)
+                        .setEmail(UserData.EMAIL).setPassword(UserData.PASSWORD).setConfirmPassword(UserData.PASSWORD));
         app.getUser().clickRegistrationButton();
         Assert.assertTrue(app.getUser().validationSummaryError());
     }
@@ -32,8 +33,8 @@ public class CreateAccountTests extends TestBase {
         app.getUser().clickRegisterLink();
         app.getUser().selectGender("gender-male");
         app.getUser().fillLoginRegisterForm(
-                new de.demowebshop.model.User().setName("Yevhenii").setLastName("Stupachenko")
-                        .setEmail("").setPassword("Qwerty123!").setConfirmPassword("Qwerty123!"));
+                new de.demowebshop.model.User().setName(UserData.NAME).setLastName(UserData.LASTNAME)
+                        .setEmail("").setPassword(UserData.PASSWORD).setConfirmPassword(UserData.PASSWORD));
         app.getUser().clickRegistrationButton();
         Assert.assertTrue(
                 app.getUser().isElementPresent(By.cssSelector("span[data-valmsg-for='Email']")),
@@ -44,10 +45,10 @@ public class CreateAccountTests extends TestBase {
     public void registerWithDifferentPasswordsNegativeTest() {
         String email = app.getUser().generateEmail();
         app.getUser().clickRegisterLink();
-        app.getUser().selectGender("gender-male");
+        app.getUser().selectGender(UserData.GENDER);
         app.getUser().fillLoginRegisterForm(
-                new de.demowebshop.model.User().setName("Yevhenii").setLastName("Stupachenko")
-                        .setEmail(email).setPassword("Qwerty123!").setConfirmPassword("Qwerty456!"));
+                new de.demowebshop.model.User().setName(UserData.NAME).setLastName(UserData.LASTNAME)
+                        .setEmail(email).setPassword(UserData.PASSWORD).setConfirmPassword("QWERTY!@#!"));
         app.getUser().clickRegistrationButton();
         Assert.assertTrue(
                 app.getUser().isElementPresent(By.cssSelector("span[data-valmsg-for='ConfirmPassword']")),
@@ -57,10 +58,10 @@ public class CreateAccountTests extends TestBase {
     @Test
     public void registerWithInvalidEmailNegativeTest() {
         app.getUser().clickRegisterLink();
-        app.getUser().selectGender("gender-male");
+        app.getUser().selectGender(UserData.GENDER);
         app.getUser().fillLoginRegisterForm(
-                new de.demowebshop.model.User().setName("Yevhenii").setLastName("Stupachenko")
-                        .setEmail("incorrect-email"). setPassword("Qwerty123!").setConfirmPassword("Qwerty123!"));
+                new de.demowebshop.model.User().setName(UserData.NAME).setLastName(UserData.LASTNAME)
+                        .setEmail("incorrect-email"). setPassword(UserData.PASSWORD).setConfirmPassword(UserData.PASSWORD));
         app.getUser().clickRegistrationButton();
         Assert.assertTrue(
                 app.getUser().isElementPresent(By.cssSelector("span[data-valmsg-for='Email']")),
@@ -70,9 +71,9 @@ public class CreateAccountTests extends TestBase {
     public void registerWithShortPasswordNegativeTest() {
         String email = app.getUser().generateEmail();
         app.getUser().clickRegisterLink();
-        app.getUser().selectGender("gender-male");
+        app.getUser().selectGender(UserData.GENDER);
         app.getUser().fillLoginRegisterForm(
-                new de.demowebshop.model.User().setName("Yevhenii").setLastName("Stupachenko")
+                new de.demowebshop.model.User().setName(UserData.NAME).setLastName(UserData.LASTNAME)
                         .setEmail(email).setPassword("123").setConfirmPassword("123"));
         app.getUser().clickRegistrationButton();
         Assert.assertTrue(

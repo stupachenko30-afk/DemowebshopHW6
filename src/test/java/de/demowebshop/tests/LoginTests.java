@@ -1,6 +1,7 @@
 package de.demowebshop.tests;
 
 import de.demowebshop.core.TestBase;
+import de.demowebshop.data.UserData;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -13,7 +14,7 @@ public class LoginTests extends TestBase {
     public void loginWithIncorrectPasswordNegativeTest() {
         app.getUser().clickLoginLink();
         app.getUser().fillLoginForm(
-                "stupachenko30@gmail.com",
+                UserData.EMAIL,
                 "IncorrectPassword123!");
         app.getUser().clickInputLoginButton();
         Assert.assertTrue(
@@ -25,7 +26,7 @@ public class LoginTests extends TestBase {
         app.getUser().clickLoginLink();
         app.getUser().fillLoginForm(
                 "stupachenko30gmail.com",
-                "QWERTy123!");
+                UserData.PASSWORD);
         app.getUser().clickInputLoginButton();
         Assert.assertTrue(
                 app.getUser().isElementPresent(By.cssSelector("span[data-valmsg-for='Email']")),
@@ -43,7 +44,7 @@ public class LoginTests extends TestBase {
         app.getUser().clickLoginLink();
         app.getUser().fillLoginForm(
                 "unknown" + System.currentTimeMillis() + "@gmail.com",
-                "Qwerty123!");
+                UserData.PASSWORD);
         app.getUser().clickInputLoginButton();
         Assert.assertTrue(
                 app.getUser().validationSummaryError(),

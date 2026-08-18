@@ -1,6 +1,7 @@
 package de.demowebshop.core;
 
 import de.demowebshop.fw.HomePageHelper;
+import de.demowebshop.fw.ShopCartHelper;
 import de.demowebshop.fw.UserHelper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -17,6 +18,7 @@ public class ApplicationManager{
     WebDriver driver;
     UserHelper user;
     HomePageHelper homePage;
+    ShopCartHelper shopCart;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -41,6 +43,7 @@ public class ApplicationManager{
         }
         user = new UserHelper(driver);
         homePage = new HomePageHelper(driver);
+        shopCart = new ShopCartHelper(driver);
         driver.get("https://demowebshop.tricentis.com/");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -62,4 +65,5 @@ public class ApplicationManager{
 
     public WebDriver getDriver() {return driver;
     }
-}
+    public ShopCartHelper getShopCart(){return shopCart;
+}}

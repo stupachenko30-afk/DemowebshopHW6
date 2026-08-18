@@ -6,6 +6,7 @@
             <class name="de.demowebshop.tests.HomePageTests"/>
             <class name="de.demowebshop.tests.CreateAccountTests"/>
             <class name="de.demowebshop.tests.LoginTests"/>
+            <class name="de.demowebshop.tests.ShopCartTest"/>
 
         </classes>
     </test>

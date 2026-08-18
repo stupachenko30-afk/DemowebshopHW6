@@ -1,5 +1,6 @@
 package de.demowebshop.fw;
 
+import de.demowebshop.data.UserData;
 import de.demowebshop.model.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -27,8 +28,8 @@ public class UserHelper extends de.demowebshop.core.BaseHelper {
     }
 
     public void fillLoginForm() {
-        type(By.id("Email"), "stupachenko30@gmail.com");
-        type(By.id("Password"), "Qwerty123!");
+        type(By.id("Email"), UserData.EMAIL);
+        type(By.id("Password"), UserData.PASSWORD);
     }
 
     public void fillLoginForm(String email, String password){
