@@ -1,0 +1,117 @@
+1064 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\asus\AppData\Local\JetBrains\IntelliJIdea2026.1\temp-testng-customsuite.xml
+
+3154 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+3179 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+6632 [main] INFO  de.demowebshop.core.TestBase -- Start test newUserRegisterExistingEmailNegativeTest
+8833 [main] INFO  de.demowebshop.core.TestBase -- PASSED: newUserRegisterExistingEmailNegativeTest
+8833 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+8834 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+9142 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+9150 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+11803 [main] INFO  de.demowebshop.core.TestBase -- Start test newUserRegisterPositiveTest
+14028 [main] INFO  de.demowebshop.core.TestBase -- PASSED: newUserRegisterPositiveTest
+14028 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+14028 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+14405 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+14418 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+17000 [main] INFO  de.demowebshop.core.TestBase -- Start test registerWithDifferentPasswordsNegativeTest
+19062 [main] INFO  de.demowebshop.core.TestBase -- PASSED: registerWithDifferentPasswordsNegativeTest
+19062 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+19063 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+19505 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+19519 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+22547 [main] INFO  de.demowebshop.core.TestBase -- Start test registerWithEmptyEmailNegativeTest
+24496 [main] INFO  de.demowebshop.core.TestBase -- PASSED: registerWithEmptyEmailNegativeTest
+24497 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+24497 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+24898 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+24910 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+27887 [main] INFO  de.demowebshop.core.TestBase -- Start test registerWithInvalidEmailNegativeTest
+29973 [main] INFO  de.demowebshop.core.TestBase -- PASSED: registerWithInvalidEmailNegativeTest
+29974 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+29974 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+30340 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+30351 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+33059 [main] INFO  de.demowebshop.core.TestBase -- Start test registerWithShortPasswordNegativeTest
+34640 [main] INFO  de.demowebshop.core.TestBase -- PASSED: registerWithShortPasswordNegativeTest
+34641 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+34641 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+35036 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+35044 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+37648 [main] INFO  de.demowebshop.core.TestBase -- Start test accountLinkIsNotPresentForGuestTest
+52713 [main] INFO  de.demowebshop.core.TestBase -- PASSED: accountLinkIsNotPresentForGuestTest
+52713 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+52713 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+53119 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+53127 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+55673 [main] INFO  de.demowebshop.core.TestBase -- Start test isHomeComponentPresentTest
+55697 [main] INFO  de.demowebshop.core.TestBase -- PASSED: isHomeComponentPresentTest
+55697 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+55697 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+55989 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+55997 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+58504 [main] INFO  de.demowebshop.core.TestBase -- Start test logoutLinkIsNotPresentForGuestTest
+73536 [main] INFO  de.demowebshop.core.TestBase -- PASSED: logoutLinkIsNotPresentForGuestTest
+73536 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+73536 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+73844 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+73851 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+76102 [main] INFO  de.demowebshop.core.TestBase -- Start test searchUnknownProductNegativeTest
+77102 [main] INFO  de.demowebshop.core.TestBase -- PASSED: searchUnknownProductNegativeTest
+77102 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+77102 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+77355 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+77361 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+79542 [main] INFO  de.demowebshop.core.TestBase -- Start test searchWithEmptyQueryNegativeTest
+79723 [main] INFO  de.demowebshop.core.TestBase -- PASSED: searchWithEmptyQueryNegativeTest
+79723 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+79723 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+79995 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+80001 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+82268 [main] INFO  de.demowebshop.core.TestBase -- Start test loginRegisteredUserPositiveTest
+83722 [main] INFO  de.demowebshop.core.TestBase -- PASSED: loginRegisteredUserPositiveTest
+83722 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+83722 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+85500 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+85508 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+87725 [main] INFO  de.demowebshop.core.TestBase -- Start test loginWithIncorrectEmailNegativeTest
+88512 [main] INFO  de.demowebshop.core.TestBase -- PASSED: loginWithIncorrectEmailNegativeTest
+88513 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+88513 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+88766 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+88775 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+91022 [main] INFO  de.demowebshop.core.TestBase -- Start test loginWithIncorrectPasswordNegativeTest
+92270 [main] INFO  de.demowebshop.core.TestBase -- PASSED: loginWithIncorrectPasswordNegativeTest
+92271 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+92271 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+92538 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+92547 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+94833 [main] INFO  de.demowebshop.core.TestBase -- Start test loginWithUnregisteredEmailNegativeTest
+96086 [main] INFO  de.demowebshop.core.TestBase -- PASSED: loginWithUnregisteredEmailNegativeTest
+96087 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+96087 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+96351 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+96361 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+98614 [main] INFO  de.demowebshop.core.TestBase -- Start test addProductToShoppingCartPositiveTest
+115382 [main] ERROR de.demowebshop.core.TestBase -- FAILED: addProductToShoppingCartPositiveTest. Screenshot - > C:\QA_Projects\DemowebshopHW6\screenshots\screen-1787065394400.png
+115382 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+115382 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+115669 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+115673 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+118269 [main] INFO  de.demowebshop.core.TestBase -- Start test addTwoProductsToShoppingCartPositiveTest
+120317 [main] INFO  de.demowebshop.core.TestBase -- PASSED: addTwoProductsToShoppingCartPositiveTest
+120317 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+120317 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+120599 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+120608 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+122706 [main] INFO  de.demowebshop.core.TestBase -- Start test removeProductFromShoppingCartPositiveTest
+139750 [main] INFO  de.demowebshop.core.TestBase -- PASSED: removeProductFromShoppingCartPositiveTest
+139750 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+139750 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+140042 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+140048 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+142352 [main] INFO  de.demowebshop.core.TestBase -- Start test updateProductQuantityPositiveTest
+144470 [main] INFO  de.demowebshop.core.TestBase -- PASSED: updateProductQuantityPositiveTest
+144470 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+144470 [main] INFO  de.demowebshop.core.TestBase -- **********************************
