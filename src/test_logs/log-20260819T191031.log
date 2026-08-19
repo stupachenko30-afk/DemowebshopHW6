@@ -1,0 +1,114 @@
+2335 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+2359 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+12620 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test accountLinkIsNotPresentForGuestTest
+27686 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: accountLinkIsNotPresentForGuestTest
+27686 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+27687 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+28507 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+28514 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+34472 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test isHomeComponentPresentTest
+34500 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: isHomeComponentPresentTest
+34500 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+34501 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+35369 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+35375 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+41483 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test logoutLinkIsNotPresentForGuestTest
+56517 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: logoutLinkIsNotPresentForGuestTest
+56518 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+56518 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+57319 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+57326 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+63132 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test searchUnknownProductNegativeTest
+64081 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: searchUnknownProductNegativeTest
+64082 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+64082 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+65143 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+65152 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+71286 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test searchWithEmptyQueryNegativeTest
+71519 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: searchWithEmptyQueryNegativeTest
+71519 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+71519 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+72549 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+72558 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+78428 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test newUserRegisterExistingEmailNegativeTest
+80042 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: newUserRegisterExistingEmailNegativeTest
+80042 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+80042 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+81079 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+81090 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+87694 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test newUserRegisterPositiveTest
+89480 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: newUserRegisterPositiveTest
+89480 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+89481 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+90415 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+90422 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+96527 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test registerWithDifferentPasswordsNegativeTest
+97836 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: registerWithDifferentPasswordsNegativeTest
+97838 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+97839 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+99099 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+99108 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+105273 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test registerWithEmptyEmailNegativeTest
+106301 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: registerWithEmptyEmailNegativeTest
+106301 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+106301 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+107207 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+107215 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+113404 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test registerWithInvalidEmailNegativeTest
+114426 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: registerWithInvalidEmailNegativeTest
+114426 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+114426 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+115386 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+115396 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+121206 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test registerWithShortPasswordNegativeTest
+122260 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: registerWithShortPasswordNegativeTest
+122260 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+122263 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+123170 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+123177 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+129260 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test loginRegisteredUserPositiveTest
+130535 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: loginRegisteredUserPositiveTest
+130537 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+130537 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+131486 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+131492 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+137345 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test loginWithIncorrectEmailNegativeTest
+138055 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: loginWithIncorrectEmailNegativeTest
+138055 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+138056 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+139005 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+139011 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+145198 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test loginWithIncorrectPasswordNegativeTest
+146222 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: loginWithIncorrectPasswordNegativeTest
+146223 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+146223 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+147121 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+147129 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+152967 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test loginWithUnregisteredEmailNegativeTest
+154008 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: loginWithUnregisteredEmailNegativeTest
+154009 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+154009 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+154926 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+154932 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+161294 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test addProductToShoppingCartPositiveTest
+163024 [Test worker] ERROR de.demowebshop.core.TestBase -- FAILED: addProductToShoppingCartPositiveTest. Screenshot - > C:\QA_Projects\DemowebshopHW6\screenshots\screen-1787159593994.png
+163024 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+163024 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+164096 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+164102 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+170143 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test addTwoProductsToShoppingCartPositiveTest
+172160 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: addTwoProductsToShoppingCartPositiveTest
+172160 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+172160 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+173228 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+173235 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+179019 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test removeProductFromShoppingCartPositiveTest
+179986 [Test worker] ERROR de.demowebshop.core.TestBase -- FAILED: removeProductFromShoppingCartPositiveTest. Screenshot - > C:\QA_Projects\DemowebshopHW6\screenshots\screen-1787159610979.png
+179987 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+179988 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+181046 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+181053 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+187015 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test updateProductQuantityPositiveTest
+188210 [Test worker] ERROR de.demowebshop.core.TestBase -- FAILED: updateProductQuantityPositiveTest. Screenshot - > C:\QA_Projects\DemowebshopHW6\screenshots\screen-1787159619205.png
+188210 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+188210 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
