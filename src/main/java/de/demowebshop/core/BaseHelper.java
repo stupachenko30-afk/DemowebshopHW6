@@ -4,7 +4,8 @@ import com.google.common.io.Files;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.TimeoutException;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
@@ -49,5 +50,17 @@ public class BaseHelper {
     public void clickOnCategory(String category) {
         String cssLocator = String.format("[href='/%s']",category);
         click(By.cssSelector(cssLocator));
+    }
+    public void acceptAlertIfPresent() {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+            Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+
+            System.out.println("ALERT TEXT: " + alert.getText());
+            alert.accept();
+
+        } catch (TimeoutException e) {
+            // alert не появился — продолжаем тест
+        }
     }
 }

@@ -1,6 +1,7 @@
 package de.demowebshop.tests;
 
 import de.demowebshop.core.TestBase;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -12,9 +13,11 @@ public class ShopCartTest extends TestBase {
     @Test
     public void addProductToShoppingCartPositiveTest() {
         app.getShopCart().clickOnCategoryBooks();
-        app.getHomePage().click(By.cssSelector("[href='/books']"));
         app.getHomePage().click(By.cssSelector("input[value='Add to cart']"));
         app.getHomePage().click(By.cssSelector(".ico-cart"));
+       // Alert alert = app.getDriver().switchTo().alert();
+     //  System.out.println("ALERT TEXT: " + alert.getText());
+      //  alert.accept();
         Assert.assertTrue(app.getHomePage().isElementPresent(By.cssSelector(".product-name")),
                 "Товар не появился в корзине");
     }
