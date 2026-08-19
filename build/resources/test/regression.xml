@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression" verbose="1">
+    <test name="AllTests">
+        <classes>
+            <class name="de.demowebshop.tests.HomePageTests"/>
+            <class name="de.demowebshop.tests.CreateAccountTests"/>
+            <class name="de.demowebshop.tests.LoginTests"/>
+
+        </classes>
+    </test>
+</suite>

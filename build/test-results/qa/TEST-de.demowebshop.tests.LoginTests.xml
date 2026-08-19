@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.demowebshop.tests.LoginTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-08-17T12:21:22.738Z" hostname="MY-COMP11" time="31.13">
+  <properties/>
+  <testcase name="loginRegisteredUserPositiveTest" classname="de.demowebshop.tests.LoginTests" time="1.213"/>
+  <testcase name="loginWithIncorrectEmailNegativeTest" classname="de.demowebshop.tests.LoginTests" time="0.722"/>
+  <testcase name="loginWithIncorrectPasswordNegativeTest" classname="de.demowebshop.tests.LoginTests" time="1.167"/>
+  <testcase name="loginWithUnregisteredEmailNegativeTest" classname="de.demowebshop.tests.LoginTests" time="1.017"/>
+  <system-out><![CDATA[14:21:22.750 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+14:21:22.755 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+14:21:28.752 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test loginRegisteredUserPositiveTest
+14:21:29.967 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+14:21:30.866 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+14:21:30.875 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+14:21:36.764 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test loginWithIncorrectEmailNegativeTest
+14:21:37.488 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+14:21:38.354 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+14:21:38.360 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+14:21:44.595 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test loginWithIncorrectPasswordNegativeTest
+14:21:45.763 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+14:21:46.654 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+14:21:46.661 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+14:21:52.850 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test loginWithUnregisteredEmailNegativeTest
+14:21:53.869 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
