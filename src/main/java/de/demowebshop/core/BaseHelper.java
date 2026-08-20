@@ -51,12 +51,17 @@ public class BaseHelper {
                 .until(ExpectedConditions.invisibilityOfElementLocated(
                         By.id("bar-notification")));
     }
-    public void closeNotification() {
-        By closeButton = By.cssSelector("#bar-notification .close");
+    public void closeNotificationIfPresent() {
+        try {
+            By closeButton = By.cssSelector("#bar-notification .close");
 
-        new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(ExpectedConditions.elementToBeClickable(closeButton))
-                .click();
+            new WebDriverWait(driver, Duration.ofSeconds(3))
+                    .until(ExpectedConditions.elementToBeClickable(closeButton))
+                    .click();
+
+        } catch (TimeoutException e) {
+            // notification не появилась — продолжаем тест
+        }
     }
 
     public void clickOnCategory(String category) {

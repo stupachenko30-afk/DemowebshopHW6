@@ -15,7 +15,8 @@ public class ShopCartTest extends TestBase {
         app.getShopCart().clickOnCategoryBooks();
         app.getHomePage().click(By.cssSelector("input[value='Add to cart']"));
         app.getHomePage().waitForNotificationToDisappear();
-        app.getHomePage().closeNotification();
+        app.getHomePage().acceptAlertIfPresent();
+        app.getHomePage().closeNotificationIfPresent();
         app.getHomePage().click(By.cssSelector(".ico-cart"));
         Assert.assertTrue(
                 app.getHomePage().isElementPresent(By.cssSelector(".product-name")),
@@ -28,7 +29,8 @@ public class ShopCartTest extends TestBase {
         app.getShopCart().clickOnCategoryBooks();
         app.getHomePage().click(By.cssSelector("input[value='Add to cart']"));
         app.getHomePage().waitForNotificationToDisappear();
-        app.getHomePage().closeNotification();
+        app.getHomePage().acceptAlertIfPresent();
+        app.getHomePage().closeNotificationIfPresent();
         app.getHomePage().click(By.cssSelector(".ico-cart"));
         app.getHomePage().click(By.name("removefromcart"));
         app.getHomePage().click(By.name("updatecart"));
@@ -41,7 +43,8 @@ public class ShopCartTest extends TestBase {
 
         app.getHomePage().click(By.cssSelector("input[value='Add to cart']"));
         app.getHomePage().waitForNotificationToDisappear();
-        app.getHomePage().closeNotification();
+        app.getHomePage().acceptAlertIfPresent();
+        app.getHomePage().closeNotificationIfPresent();
         app.getHomePage().click(By.cssSelector(".ico-cart"));
         app.getHomePage().type(By.cssSelector(".qty-input"), "2");
         app.getHomePage().click(By.name("updatecart"));
