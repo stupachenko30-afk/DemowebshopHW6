@@ -15,10 +15,7 @@ public class ShopCartTest extends TestBase {
         app.getHomePage().waitForNotificationToDisappear();
         app.getHomePage().acceptAlertIfPresent();
         app.getHomePage().closeNotificationIfPresent();
-
         app.getShopCart().clickOnIcoCart();
-       // app.getHomePage().click(By.cssSelector(".ico-cart"));
-
         Assert.assertTrue(
                 app.getHomePage().isElementPresent(By.cssSelector(".product-name")),
                 "Товар не появился в корзине"
@@ -32,7 +29,6 @@ public class ShopCartTest extends TestBase {
         app.getHomePage().waitForNotificationToDisappear();
         app.getHomePage().acceptAlertIfPresent();
         app.getHomePage().closeNotificationIfPresent();
-
         app.getShopCart().clickOnIcoCart();
         app.getHomePage().click(By.name("removefromcart"));
         app.getHomePage().click(By.name("updatecart"));
