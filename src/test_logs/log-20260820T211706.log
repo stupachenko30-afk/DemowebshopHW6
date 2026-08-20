@@ -1,0 +1,9 @@
+1267 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\asus\AppData\Local\JetBrains\IntelliJIdea2026.1\temp-testng-customsuite.xml
+
+1919 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+1951 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+6256 [main] INFO  de.demowebshop.core.TestBase -- Start test addProductToShoppingCartPositiveTest
+19706 [main] INFO  de.demowebshop.core.TestBase -- PASSED: addProductToShoppingCartPositiveTest
+19707 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+19707 [main] INFO  de.demowebshop.core.TestBase -- **********************************

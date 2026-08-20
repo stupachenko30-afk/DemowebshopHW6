@@ -63,7 +63,8 @@ public class ApplicationManager{
         return homePage;
     }
 
-    public WebDriver getDriver() {return driver;
-    }
-    public ShopCartHelper getShopCart(){return shopCart;
-}}
+    public WebDriver getDriver() {return driver;}
+
+    public ShopCartHelper getShopCart(){return shopCart;}
+
+}

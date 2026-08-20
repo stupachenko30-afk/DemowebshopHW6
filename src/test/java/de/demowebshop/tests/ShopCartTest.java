@@ -7,17 +7,18 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-
-
 public class ShopCartTest extends TestBase {
     @Test
     public void addProductToShoppingCartPositiveTest() {
         app.getShopCart().clickOnCategoryBooks();
-        app.getHomePage().click(By.cssSelector("input[value='Add to cart']"));
+        app.getShopCart().clickOnAddToCart();
         app.getHomePage().waitForNotificationToDisappear();
         app.getHomePage().acceptAlertIfPresent();
         app.getHomePage().closeNotificationIfPresent();
-        app.getHomePage().click(By.cssSelector(".ico-cart"));
+
+        app.getShopCart().clickOnIcoCart();
+       // app.getHomePage().click(By.cssSelector(".ico-cart"));
+
         Assert.assertTrue(
                 app.getHomePage().isElementPresent(By.cssSelector(".product-name")),
                 "Товар не появился в корзине"
@@ -27,11 +28,12 @@ public class ShopCartTest extends TestBase {
     public void removeProductFromShoppingCartPositiveTest() {
 
         app.getShopCart().clickOnCategoryBooks();
-        app.getHomePage().click(By.cssSelector("input[value='Add to cart']"));
+        app.getShopCart().clickOnAddToCart();
         app.getHomePage().waitForNotificationToDisappear();
         app.getHomePage().acceptAlertIfPresent();
         app.getHomePage().closeNotificationIfPresent();
-        app.getHomePage().click(By.cssSelector(".ico-cart"));
+
+        app.getShopCart().clickOnIcoCart();
         app.getHomePage().click(By.name("removefromcart"));
         app.getHomePage().click(By.name("updatecart"));
         Assert.assertFalse(app.getHomePage().isElementPresent(By.cssSelector(".product-name")),
@@ -41,11 +43,11 @@ public class ShopCartTest extends TestBase {
     public void updateProductQuantityPositiveTest() {
         app.getShopCart().clickOnCategoryBooks();
 
-        app.getHomePage().click(By.cssSelector("input[value='Add to cart']"));
+        app.getShopCart().clickOnAddToCart();
         app.getHomePage().waitForNotificationToDisappear();
         app.getHomePage().acceptAlertIfPresent();
         app.getHomePage().closeNotificationIfPresent();
-        app.getHomePage().click(By.cssSelector(".ico-cart"));
+        app.getShopCart().clickOnIcoCart();
         app.getHomePage().type(By.cssSelector(".qty-input"), "2");
         app.getHomePage().click(By.name("updatecart"));
         String quantity = app.getDriver()
@@ -56,10 +58,10 @@ public class ShopCartTest extends TestBase {
     @Test
     public void addTwoProductsToShoppingCartPositiveTest() {
         app.getShopCart().clickOnCategoryBooks();
-        app.getHomePage().click(By.cssSelector("input[value='Add to cart']"));
+        app.getShopCart().clickOnAddToCart();
         app.getHomePage().acceptAlertIfPresent();
         app.getHomePage().waitForText(By.cssSelector(".cart-qty"), "(1)");
-        app.getHomePage().click(By.cssSelector("input[value='Add to cart']"));
+        app.getShopCart().clickOnAddToCart();
         app.getHomePage().waitForText(By.cssSelector(".cart-qty"), "(2)");
         String cartQuantity = app.getDriver()
                 .findElement(By.cssSelector(".cart-qty"))

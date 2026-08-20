@@ -81,4 +81,13 @@ public class BaseHelper {
         }
 
     }
+
+    public void clickOnAdd(String cart) {
+        String cssLocator = String.format("input[value='%s']", cart);
+        click(By.cssSelector(cssLocator));
+    }
+
+    public void clickOnIcoCart() {
+        click(By.cssSelector(".ico-cart"));
+    }
 }
