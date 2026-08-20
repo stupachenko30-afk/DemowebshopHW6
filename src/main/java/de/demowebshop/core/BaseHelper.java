@@ -46,6 +46,18 @@ public class BaseHelper {
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.textToBe(locator, text));
     }
+    public void waitForNotificationToDisappear() {
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.invisibilityOfElementLocated(
+                        By.id("bar-notification")));
+    }
+    public void closeNotification() {
+        By closeButton = By.cssSelector("#bar-notification .close");
+
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.elementToBeClickable(closeButton))
+                .click();
+    }
 
     public void clickOnCategory(String category) {
         String cssLocator = String.format("[href='/%s']",category);
@@ -62,5 +74,6 @@ public class BaseHelper {
         } catch (TimeoutException e) {
             // alert не появился — продолжаем тест
         }
+
     }
 }

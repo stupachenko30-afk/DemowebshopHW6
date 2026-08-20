@@ -1,0 +1,24 @@
+2910 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+2962 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+13263 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test addProductToShoppingCartPositiveTest
+15533 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: addProductToShoppingCartPositiveTest
+15533 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+15534 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+16499 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+16510 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+23227 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test addTwoProductsToShoppingCartPositiveTest
+28348 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: addTwoProductsToShoppingCartPositiveTest
+28349 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+28349 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+29263 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+29272 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+40340 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test removeProductFromShoppingCartPositiveTest
+57904 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: removeProductFromShoppingCartPositiveTest
+57905 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+57905 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************
+58885 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using geckodriver 0.37.1 (resolved driver for Firefox 153)
+58895 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.37.1\geckodriver.exe
+65290 [Test worker] INFO  de.demowebshop.core.TestBase -- Start test updateProductQuantityPositiveTest
+67935 [Test worker] INFO  de.demowebshop.core.TestBase -- PASSED: updateProductQuantityPositiveTest
+67935 [Test worker] INFO  de.demowebshop.core.TestBase -- Stop test
+67935 [Test worker] INFO  de.demowebshop.core.TestBase -- **********************************

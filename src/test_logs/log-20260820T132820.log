@@ -1,0 +1,27 @@
+1269 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\asus\AppData\Local\JetBrains\IntelliJIdea2026.1\temp-testng-customsuite.xml
+
+2439 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+2534 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+6302 [main] INFO  de.demowebshop.core.TestBase -- Start test addProductToShoppingCartPositiveTest
+11542 [main] ERROR de.demowebshop.core.TestBase -- FAILED: addProductToShoppingCartPositiveTest. Screenshot - > C:\QA_Projects\DemowebshopHW6\screenshots\screen-1787225311836.png
+11542 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+11543 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+12093 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+12127 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+15516 [main] INFO  de.demowebshop.core.TestBase -- Start test addTwoProductsToShoppingCartPositiveTest
+20461 [main] INFO  de.demowebshop.core.TestBase -- PASSED: addTwoProductsToShoppingCartPositiveTest
+20462 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+20462 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+20868 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+20881 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+23301 [main] INFO  de.demowebshop.core.TestBase -- Start test removeProductFromShoppingCartPositiveTest
+28521 [main] ERROR de.demowebshop.core.TestBase -- FAILED: removeProductFromShoppingCartPositiveTest. Screenshot - > C:\QA_Projects\DemowebshopHW6\screenshots\screen-1787225328832.png
+28522 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+28522 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+29446 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+29475 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+33493 [main] INFO  de.demowebshop.core.TestBase -- Start test updateProductQuantityPositiveTest
+39086 [main] ERROR de.demowebshop.core.TestBase -- FAILED: updateProductQuantityPositiveTest. Screenshot - > C:\QA_Projects\DemowebshopHW6\screenshots\screen-1787225339398.png
+39086 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+39087 [main] INFO  de.demowebshop.core.TestBase -- **********************************

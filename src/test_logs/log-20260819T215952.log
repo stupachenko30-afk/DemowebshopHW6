@@ -1,0 +1,33 @@
+2077 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\asus\AppData\Local\JetBrains\IntelliJIdea2026.1\temp-testng-customsuite.xml
+
+3742 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+3807 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+10625 [main] INFO  de.demowebshop.core.TestBase -- Start test accountLinkIsNotPresentForGuestTest
+25696 [main] INFO  de.demowebshop.core.TestBase -- PASSED: accountLinkIsNotPresentForGuestTest
+25696 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+25697 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+26202 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+26223 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+30318 [main] INFO  de.demowebshop.core.TestBase -- Start test isHomeComponentPresentTest
+30368 [main] INFO  de.demowebshop.core.TestBase -- PASSED: isHomeComponentPresentTest
+30368 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+30368 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+31828 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+31848 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+35637 [main] INFO  de.demowebshop.core.TestBase -- Start test logoutLinkIsNotPresentForGuestTest
+50778 [main] INFO  de.demowebshop.core.TestBase -- PASSED: logoutLinkIsNotPresentForGuestTest
+50778 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+50778 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+55237 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+55272 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+59179 [main] INFO  de.demowebshop.core.TestBase -- Start test searchUnknownProductNegativeTest
+60987 [main] INFO  de.demowebshop.core.TestBase -- PASSED: searchUnknownProductNegativeTest
+60988 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+60988 [main] INFO  de.demowebshop.core.TestBase -- **********************************
+61926 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+61957 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+65767 [main] INFO  de.demowebshop.core.TestBase -- Start test searchWithEmptyQueryNegativeTest
+66971 [main] INFO  de.demowebshop.core.TestBase -- PASSED: searchWithEmptyQueryNegativeTest
+66979 [main] INFO  de.demowebshop.core.TestBase -- Stop test
+66980 [main] INFO  de.demowebshop.core.TestBase -- **********************************

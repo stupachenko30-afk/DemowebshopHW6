@@ -14,18 +14,21 @@ public class ShopCartTest extends TestBase {
     public void addProductToShoppingCartPositiveTest() {
         app.getShopCart().clickOnCategoryBooks();
         app.getHomePage().click(By.cssSelector("input[value='Add to cart']"));
+        app.getHomePage().waitForNotificationToDisappear();
+        app.getHomePage().closeNotification();
         app.getHomePage().click(By.cssSelector(".ico-cart"));
-       // Alert alert = app.getDriver().switchTo().alert();
-     //  System.out.println("ALERT TEXT: " + alert.getText());
-      //  alert.accept();
-        Assert.assertTrue(app.getHomePage().isElementPresent(By.cssSelector(".product-name")),
-                "Товар не появился в корзине");
+        Assert.assertTrue(
+                app.getHomePage().isElementPresent(By.cssSelector(".product-name")),
+                "Товар не появился в корзине"
+        );
     }
     @Test
     public void removeProductFromShoppingCartPositiveTest() {
 
         app.getShopCart().clickOnCategoryBooks();
         app.getHomePage().click(By.cssSelector("input[value='Add to cart']"));
+        app.getHomePage().waitForNotificationToDisappear();
+        app.getHomePage().closeNotification();
         app.getHomePage().click(By.cssSelector(".ico-cart"));
         app.getHomePage().click(By.name("removefromcart"));
         app.getHomePage().click(By.name("updatecart"));
@@ -37,6 +40,8 @@ public class ShopCartTest extends TestBase {
         app.getShopCart().clickOnCategoryBooks();
 
         app.getHomePage().click(By.cssSelector("input[value='Add to cart']"));
+        app.getHomePage().waitForNotificationToDisappear();
+        app.getHomePage().closeNotification();
         app.getHomePage().click(By.cssSelector(".ico-cart"));
         app.getHomePage().type(By.cssSelector(".qty-input"), "2");
         app.getHomePage().click(By.name("updatecart"));
@@ -49,6 +54,7 @@ public class ShopCartTest extends TestBase {
     public void addTwoProductsToShoppingCartPositiveTest() {
         app.getShopCart().clickOnCategoryBooks();
         app.getHomePage().click(By.cssSelector("input[value='Add to cart']"));
+        app.getHomePage().acceptAlertIfPresent();
         app.getHomePage().waitForText(By.cssSelector(".cart-qty"), "(1)");
         app.getHomePage().click(By.cssSelector("input[value='Add to cart']"));
         app.getHomePage().waitForText(By.cssSelector(".cart-qty"), "(2)");
